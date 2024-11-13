@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>petresort</title>
@@ -10,27 +15,89 @@
 
 <body>
     <div class="container">
-        <nav class="menu">
-            <div class="website">
-                <img src="img/pet-resort-logo.webp" alt="">
-                <h2>Pet Resort</h2>
+        <div class="menu">
+            <div>
+                <img id="logo" src="img/pet-resort-logo.webp" alt="">
+                <h2 class="roboto-medium">Pet Resort</h2>
             </div>
             <div class="links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Rooms</a></li>
-                </ul>
+                <nav>
+                    <ul class="taskbar">
+                        <li id="home" class="menuitem"><a href="#">Home</a></li>
+                        <li id="about" class="menuitem"><a href="#">About</a></li>
+                        <li id="rooms" class="menuitem"><a href="#">Rooms</a></li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </div>
         <div class="box">
             <div class="happydog">
-                <article>
-                    <h1>Pet Resort</h1>
-                    <p id="whitep">Where pets are royalty</p>
+                <article class="royalpets">
+                    <h1 class="roboto-medium">Pet Resort</h1>
+                    <p class="roboto-medium" id="whitep">Where pets are royalty</p>
                 </article>
             </div>
-            .
+            <div class="octoberdeal">
+                <img id="groomdog" src="img/groomin.webp" alt="">
+                <article id="dealyap">
+                    <h3>October Grooming</h3>
+                    <p class="pblack">Get your best friend ready for a total make-over while at the same time being
+                        spoilt silly</p>
+                    <a href="#">Book Grooming</a>
+                </article>
+            </div>
+            <div class="partners">
+                <article id="yapartners">
+                    <h3>Partners</h3>
+                    <p class="pblack">
+                        We partner with many influental companies to bring your pet the best experience possible.</p>
+                </article>
+                <div id="logomanager">
+                    <img class="partnerlogos" src="img/logo-activision.webp" alt="">
+                    <img class="partnerlogos" src="img/logo-AstraZeneca.webp" alt="">
+                    <img class="partnerlogos" src="img/logo-chatgpt.webp" alt="">
+                    <img class="partnerlogos" src="img/logo-fedex.webp" alt="">
+                    <img class="partnerlogos" src="img/logo-gucci.webp" alt="">
+                    <img class="partnerlogos" src="img/logo-lego.webp" alt="">
+                    <img class="partnerlogos" src="img/logo-paypal.webp" alt="">
+                </div>
+            </div>
+            <div class="merch">
+                <img id="dogmerch" src="img/dog-wear.webp" alt="">
+                <article id="merchyap">
+                    <h3>
+                        Merch
+                    </h3>
+                    <p class="pblack">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#">Boka</a>
+                </article>
+            </div>
+            <div class="bfl">
+                <img id="fourdogs" src="img/4dogs.webp" alt="">
+                <article id="bflyap">
+                    <h3>
+                        Bundles for Life
+                    </h3>
+                    <p class="pblack">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#">Boka</a>
+                </article>
+            </div>
+            <div class="dining">
+                <img id="dogdining" src="img/ritz.webp" alt="">
+                <article id="diningyap">
+                    <h3>
+                        Bundles for Life
+                    </h3>
+                    <p class="pblack">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#">Boka</a>
+                </article>
+            </div>
         </div>
     </div>
 </body>

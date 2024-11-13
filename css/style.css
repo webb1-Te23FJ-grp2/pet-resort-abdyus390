@@ -8,15 +8,28 @@ body{
 }
 .container{
 
-width: 1200px;
+    width: 1200px;
 }
 .menu{
+    /* width: ?;*/  
+}
+
+#logo{
     display: flex;
-    
+    /*justify-content: center;*/
 }
+
 .links{
-    display: flex: ;
+    column-gap: normal;
 }
+
+
+
+.box {
+    display: grid;
+    gap: 20px;
+}
+
 
 
 .happydog{
@@ -24,25 +37,147 @@ width: 1200px;
     border-radius: 10px;
     height: 600px;
 }
+.royalpets {
+    height: 600px;
+    display: grid;
+    grid-template-rows: 10fr 1fr 1fr 1fr 1fr;
+    margin: 20px;
+}
 
 
 
+.octoberdeal {
+    background-color: white;
+    display: grid;
+    /*grid-column 1fr 1fr:*/
+    padding: 10px;
+    height: 300px;
+}
+#groomdog {
+    border-radius: 10px;
+    grid-column: 1;
+    margin-right: 10px;
+}
+#dealyap{
+    grid-column: 2;
+}
+
+
+
+.partners{
+    background-color: white;
+    height: 610px;
+    border-radius: 10px;
+}
+#logomanager{
+    display: grid;
+    justify-content: center;
+    
+}
+.partnerlogos {
+    border: red dotted;
+    /*object-fit: scale-down;*/
+
+}
+
+
+
+.merch {
+    background-color: white;
+    display: flex;
+    /*align-items: flex-start;*/
+    padding: 10px;
+    border-radius: 10px;
+    height: 300px;
+}
+#dogmerch {
+    display: block;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+#merchyap {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.bfl {
+    background-color: white;
+    display: flex;
+    /*align-items: flex-start;*/
+    padding: 10px;
+    border-radius: 10px;
+    height: 300px;
+}
+#fourdogs {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#bflyap {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.dining {
+    background-color: white;
+    display: flex;
+    /*align-items: flex-start;*/
+    padding: 10px;
+    border-radius: 10px;
+    height: 300px;
+}
+#dogdining {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#diningyap {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 h1{
     color: white;
-    font-size: 70px;
+    font-size: 50px;
+    grid-row: 5;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 #whitep{
     color: white;
+    grid-row: 6;
+    margin-bottom: 40px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-a{
+.taskbar {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display: grid; 
+    grid-template-columns: 1fr repeat(3, min-content);
+    justify-items: end;
+}
+.menuitem{
     display: block;
+    margin: 5px;
+    padding: 10px;
+    border: solid thin gray;
     text-decoration: none;
-    color: black;
-    padding: 2px;
-    border-radius: 4px;
+    color: #eee;
+    background-color: #333;
+}
+.menuitem:hover{
+    color:#333;
+    background-color: #eee;
+}
 
-}
-ul{
-list-style: none;
-}
