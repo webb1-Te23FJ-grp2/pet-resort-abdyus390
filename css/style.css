@@ -7,11 +7,11 @@ body{
     justify-content: center ;
 }
 .container{
-
     width: 1200px;
 }
 .menu{
-    /* width: ?;*/  
+    display: flex;
+
 }
 
 #logo{
@@ -21,6 +21,8 @@ body{
 
 .links{
     column-gap: normal;
+    display: flex;
+    
 }
 
 
@@ -28,6 +30,10 @@ body{
 .box {
     display: grid;
     gap: 20px;
+    grid-template-areas: 
+    "OG OG OG P"
+    "M BFL D P"
+    ;
 }
 
 
@@ -38,7 +44,6 @@ body{
     height: 600px;
 }
 .royalpets {
-    height: 600px;
     display: grid;
     grid-template-rows: 10fr 1fr 1fr 1fr 1fr;
     margin: 20px;
@@ -48,14 +53,13 @@ body{
 
 .octoberdeal {
     background-color: white;
-    display: grid;
-    /*grid-column 1fr 1fr:*/
+    grid-area: OG;
     padding: 10px;
-    height: 300px;
+    display: flex;
+    border-radius: 4px;
 }
 #groomdog {
     border-radius: 10px;
-    grid-column: 1;
     margin-right: 10px;
 }
 #dealyap{
@@ -66,34 +70,35 @@ body{
 
 .partners{
     background-color: white;
-    height: 610px;
     border-radius: 10px;
+    grid-area: P;
 }
 #logomanager{
     display: grid;
-    justify-content: center;
-    
+    grid-auto-rows: 70px;
+    justify-items: center;
 }
 .partnerlogos {
+    display: block;
     border: red dotted;
-    /*object-fit: scale-down;*/
-
+    display: grid;
+    
 }
 
 
 
 .merch {
     background-color: white;
-    display: flex;
-    /*align-items: flex-start;*/
     padding: 10px;
     border-radius: 10px;
-    height: 300px;
+    grid-area: M;
 }
 #dogmerch {
     display: block;
     border-radius: 10px;
     margin-right: 10px;
+    display: block;
+    width: 100%;
 }
 #merchyap {
     display: flex;
@@ -104,15 +109,15 @@ body{
 
 .bfl {
     background-color: white;
-    display: flex;
-    /*align-items: flex-start;*/
     padding: 10px;
     border-radius: 10px;
-    height: 300px;
+    grid-area: BFL;
 }
 #fourdogs {
     border-radius: 10px;
     margin-bottom: 10px;
+    display: block;
+    width: 100%;
 }
 #bflyap {
     display: flex;
@@ -123,15 +128,15 @@ body{
 
 .dining {
     background-color: white;
-    display: flex;
-    /*align-items: flex-start;*/
     padding: 10px;
     border-radius: 10px;
-    height: 300px;
+    grid-area: D;
 }
 #dogdining {
     border-radius: 10px;
     margin-bottom: 10px;
+    display: block;
+    width: 100%;
 }
 #diningyap {
     display: flex;
@@ -165,16 +170,14 @@ h1{
     padding: 10px;
     display: grid; 
     grid-template-columns: 1fr repeat(3, min-content);
-    justify-items: end;
+    justify-content: end;
 }
 .menuitem{
     display: block;
     margin: 5px;
     padding: 10px;
-    border: solid thin gray;
     text-decoration: none;
-    color: #eee;
-    background-color: #333;
+    color: #000000;
 }
 .menuitem:hover{
     color:#333;
