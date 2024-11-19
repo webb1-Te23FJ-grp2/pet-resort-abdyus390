@@ -1,186 +1,200 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    background-color: #eee;
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 1200px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoandtitle {
     display: flex;
-    justify-content: center ;
-}
-.container{
-    width: 1200px;
-}
-.menu{
-    display: flex;
-
 }
 
-#logo{
-    display: flex;
-    /*justify-content: center;*/
+.links {
+  column-gap: normal;
+  display: flex;
 }
-
-.links{
-    column-gap: normal;
-    display: flex;
-    
-}
-
-
 
 .box {
-    display: grid;
-    gap: 20px;
-    grid-template-areas: 
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 1fr;
+  grid-template-areas:
     "OG OG OG P"
-    "M BFL D P"
-    ;
+    "M BFL D P";
 }
 
 
 
-.happydog{
-    background-image: url("../img/happiest-dog.webp");
-    border-radius: 10px;
-    height: 600px;
+
+.happydog {
+  background-image: url("../img/happiest-dog.webp");
+  border-radius: 10px;
+  height: 600px;
+  margin-bottom: 20px;
 }
 .royalpets {
-    display: grid;
-    grid-template-rows: 10fr 1fr 1fr 1fr 1fr;
-    margin: 20px;
+  display: grid;
+  padding-top: 450px;
+  margin: 20px;
 }
+
 
 
 
 .octoberdeal {
-    background-color: white;
-    grid-area: OG;
-    padding: 10px;
-    display: flex;
-    border-radius: 4px;
+  background-color: white;
+  grid-area: OG;
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
 }
 #groomdog {
-    border-radius: 10px;
-    margin-right: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
 }
-#dealyap{
-    grid-column: 2;
+#dealyap {
+  grid-column: 2;
 }
 
 
 
-.partners{
-    background-color: white;
-    border-radius: 10px;
-    grid-area: P;
+
+.partners {
+  background-color: white;
+  border-radius: 10px;
+  grid-area: P;
+  padding: 10px;
 }
-#logomanager{
-    display: grid;
-    grid-auto-rows: 70px;
-    justify-items: center;
+#logomanager {
+  display: grid;
+  grid-auto-rows: 70px;
+  justify-items: center;
 }
 .partnerlogos {
-    display: block;
-    border: red dotted;
-    display: grid;
-    
+  display: block;
+  display: grid;
 }
+.gucci {
+  height: 70px;
+}
+
 
 
 
 .merch {
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    grid-area: M;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  grid-area: M;
 }
 #dogmerch {
-    display: block;
-    border-radius: 10px;
-    margin-right: 10px;
-    display: block;
-    width: 100%;
+  display: block;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 100%;
 }
 #merchyap {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 .bfl {
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    grid-area: BFL;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  grid-area: BFL;
 }
 #fourdogs {
-    border-radius: 10px;
-    margin-bottom: 10px;
-    display: block;
-    width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
 }
 #bflyap {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
-
 
 .dining {
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    grid-area: D;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  grid-area: D;
 }
 #dogdining {
-    border-radius: 10px;
-    margin-bottom: 10px;
-    display: block;
-    width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
 }
 #diningyap {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
+
+
 
 
 
 
 .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
-h1{
-    color: white;
-    font-size: 50px;
-    grid-row: 5;
-    margin-top: 0;
-    margin-bottom: 0;
+h1 {
+  color: white;
+  font-size: 50px;
+  grid-row: 5;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-#whitep{
-    color: white;
-    grid-row: 6;
-    margin-bottom: 40px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+h3 {
+    font-size: x-large;
+}
+#whitep {
+  color: white;
+  grid-row: 6;
+  margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.pblack {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 .taskbar {
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    display: grid; 
-    grid-template-columns: 1fr repeat(3, min-content);
-    justify-content: end;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, min-content);
+  justify-content: end;
 }
-.menuitem{
-    display: block;
-    margin: 5px;
-    padding: 10px;
-    text-decoration: none;
-    color: #000000;
+.menuitem {
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
-.menuitem:hover{
-    color:#333;
-    background-color: #eee;
+.menuitem:hover {
+  color: #333;
+  background-color: #eee;
 }
-
